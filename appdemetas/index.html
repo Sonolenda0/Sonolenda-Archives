@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>2025</h1>
+    </header>
+    <main>
+        <section id="professional">
+            <h2>Metas Profissionais</h2>
+            <ul>
+                <li>Aprimorar habilidades em programação avançada, especialmente em C# e desenvolvimento de jogos.</li>
+                <li>Concluir pelo menos dois projetos de software significativos.</li>
+                <li>Participar de uma competição ou hackathon relacionado à tecnologia.</li>
+            </ul>
+        </section>
+
+        <section id="personal">
+            <h2>Metas Pessoais</h2>
+            <ul>
+                <li>Manter uma rotina consistente de treinos na academia.</li>
+                <li>Estabelecer hábitos saudáveis, como melhorar a alimentação.</li>
+                <li>Ler pelo menos 12 livros ao longo do ano.</li>
+            </ul>
+        </section>
+
+        <section id="learning">
+            <h2>Metas de Aprendizado</h2>
+            <ul>
+                <li>Aprender um novo idioma de programação.</li>
+                <li>Fazer um curso online sobre design de jogos.</li>
+                <li>Estudar algoritmos e estruturas de dados em profundidade.</li>
+            </ul>
+        </section>
+
+        <section id="tabs">
+            <div id="tab-buttons">
+                <button onclick="showTab('calendar-professional-container')">Profissional</button>
+                <button onclick="showTab('calendar-personal-container')">Pessoal</button>
+                <button onclick="showTab('calendar-learning-container')">Aprendizado</button>
+                <button onclick="showTab('calendar-projects-container')">Projetos</button>
+                <button onclick="showTab('calendar-fitness-container')">Fitness</button>
+            </div>
+
+            <div id="tab-content">
+                <div id="calendar-professional-container" class="calendar-tab">
+                    <h2>Calendário de Metas Profissionais</h2>
+                    <div id="calendar-professional"></div>
+                </div>
+                <div id="calendar-personal-container" class="calendar-tab">
+                    <h2>Calendário de Metas Pessoais</h2>
+                    <div id="calendar-personal"></div>
+                </div>
+                <div id="calendar-learning-container" class="calendar-tab">
+                    <h2>Calendário de Metas de Aprendizado</h2>
+                    <div id="calendar-learning"></div>
+                </div>
+                <div id="calendar-projects-container" class="calendar-tab">
+                    <h2>Calendário de Projetos</h2>
+                    <div id="calendar-projects"></div>
+                </div>
+                <div id="calendar-fitness-container" class="calendar-tab">
+                    <h2>Calendário de Fitness</h2>
+                    <div id="calendar-fitness"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 - Mudando de Vida em 12 Meses</p>
+    </footer>
+</body>
+</html>

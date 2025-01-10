@@ -1,0 +1,209 @@
+/* --- Estilos Gerais --- */
+body {
+    font-family: 'Space Mono', monospace; /* Fonte monoespaçada arredondada e visível */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #37474f;
+}
+
+header {
+    background-color: #1e88e5;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 2rem;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #1565c0;
+    border-bottom: 2px solid #90caf9;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0d47a1;
+    color: white;
+}
+
+#tabs {
+    margin-top: 2rem;
+}
+
+#tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#tab-buttons button {
+    background-color: #1e88e5;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#tab-buttons button:hover {
+    background-color: #1565c0;
+    transform: translateY(-2px);
+}
+
+#tab-buttons button:active {
+    transform: translateY(1px);
+}
+
+.calendar-tab {
+    display: none;
+}
+
+.month {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.month h3 {
+    text-align: left;
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    color: #1e88e5;
+    font-weight: bold;
+    padding-left: 1rem;
+    border: 2px solid #1e88e5;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    background-color: #e3f2fd;
+}
+
+.month-buttons {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+    justify-items: center;
+}
+
+.day-container {
+    text-align: center;
+    width: 50px;
+}
+
+.day {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #1e88e5;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.day:hover {
+    background-color: #1565c0;
+}
+
+.color-options {
+    display: flex;
+    gap: 0.2rem;
+    margin-top: 0.5rem;
+}
+
+.color-option {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.vermelho {
+    background-color: red;
+}
+
+.verde {
+    background-color: green;
+}
+
+.laranja {
+    background-color: orange;
+}
+
+.month-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 0.5rem;
+}
+
+.month-grid .day-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.month-grid .day {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #1e88e5;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.month-grid .day:hover {
+    background-color: #1565c0;
+}
+
+.day-container .color-options {
+    display: flex;
+    gap: 0.2rem;
+    margin-top: 0.5rem;
+}
+
+.day-container .color-option {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.day-container .vermelho {
+    background-color: red;
+}
+
+.day-container .verde {
+    background-color: green;
+}
+
+.day-container .laranja {
+    background-color: orange;
+}
